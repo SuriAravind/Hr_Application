@@ -1,4 +1,4 @@
-package com.ashu.humanresource.employee.models;
+package com.ashu.humanresource.employee.entity;
 
 /**
  * Created by Suriyanarayanan K

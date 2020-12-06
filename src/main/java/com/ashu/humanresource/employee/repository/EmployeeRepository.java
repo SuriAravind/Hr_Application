@@ -1,6 +1,6 @@
 package com.ashu.humanresource.employee.repository;
 
-import com.ashu.humanresource.employee.models.EmployeeEntity;
+import com.ashu.humanresource.employee.entity.EmployeeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;

@@ -1,6 +1,11 @@
 package com.ashu.humanresource.employee.controller;
 
+import com.ashu.humanresource.employee.bean.resquest.EmployeeRequestBean;
+import com.ashu.humanresource.employee.entity.EmployeeEntity;
+import com.ashu.humanresource.employee.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {
-    @Autowired
 
+
+    @Autowired
+    private EmployeeService employeeService;
+
+    @PostMapping
+    public void saveEmployee(@RequestBody EmployeeRequestBean employeeRequestBean) {
+        employeeService.saveEmployeeEntity(employeeRequestBean);
+    }
 }
