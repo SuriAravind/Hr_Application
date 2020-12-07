@@ -7,7 +7,6 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import java.sql.Timestamp;
 
@@ -33,4 +32,7 @@ public abstract class JPAAuditEntity {
     private Long createdId;
 
     private Long modifiedId;
+
+    @Builder.Default
+    private Boolean isActive=true;
 }
