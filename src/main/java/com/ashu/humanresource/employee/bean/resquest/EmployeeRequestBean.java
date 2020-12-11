@@ -21,5 +21,5 @@ public class EmployeeRequestBean {
     private Long phoneNo;
     private Date joinedDate;
     private String reportingTo;
-    private String designation;
+    private String designationId;
 }

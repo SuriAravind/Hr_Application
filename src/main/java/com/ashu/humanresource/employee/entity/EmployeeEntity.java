@@ -37,6 +37,6 @@ public class EmployeeEntity extends JPAAuditEntity {
      * Official Info
      */
     private Date joinedDate;
-    private String reportingTo;
-    private String designation;
+    private String reportingTo; // employee Id
+    private String designationId;
 }

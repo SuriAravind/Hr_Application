@@ -21,18 +21,18 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @ToString
 
-@Entity
-@Table(name="LEAVE")
+//@Entity
+//@Table(name="LEAVE")
 public class LeaveEntity extends JPAAuditEntity {
 
     @Id
     private String id;
     private String employeeId;
-    private String leaveTypeId;
-    private Timestamp fromDate;
-    private LeaveSession fromSession;
-    private Timestamp toDate;
-    private LeaveSession toSession;
+    /*private String leaveTypeId;
+    private Timestamp startDate;
+    private Integer fromSession;
+    private Timestamp endDate;
+    private Integer toSession;
     private Integer numberOfDays;
-    private String reason;
+    private String reason;*/
 }

@@ -5,11 +5,10 @@ import org.springframework.hateoas.RepresentationModel;
 
 import java.util.Date;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
+
 @Builder
+@Getter
+@Setter
 public class EmployeeResponseBean extends RepresentationModel<EmployeeResponseBean> {
 
     private String employeeId;

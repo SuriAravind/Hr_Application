@@ -23,7 +23,7 @@ public class EmployeeService {
         employeeEntity.setFirstName(employeeRequestBean.getFirstName());
         employeeEntity.setMiddleName(employeeRequestBean.getMiddleName());
         employeeEntity.setLastName(employeeRequestBean.getLastName());
-        employeeEntity.setDesignation(employeeRequestBean.getDesignation());
+        employeeEntity.setDesignationId(employeeRequestBean.getDesignationId());
         employeeEntity.setPhoneNo(employeeRequestBean.getPhoneNo());
         employeeEntity.setReportingTo(employeeRequestBean.getReportingTo());
         employeeEntity.setEmailId(employeeRequestBean.getEmailId());

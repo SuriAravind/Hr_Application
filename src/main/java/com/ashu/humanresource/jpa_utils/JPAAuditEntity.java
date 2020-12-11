@@ -11,9 +11,6 @@ import javax.persistence.EntityListeners;
 import java.sql.Timestamp;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
 @EntityListeners(AuditingEntityListener.class)
 public abstract class JPAAuditEntity {
 
@@ -33,6 +30,5 @@ public abstract class JPAAuditEntity {
 
     private Long modifiedId;
 
-    @Builder.Default
     private Boolean isActive=true;
 }
